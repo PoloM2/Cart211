@@ -129,10 +129,17 @@ nav a {
     float: none;
     line-height: 150%;
 }
+main{
+    text-align: justify;
+}
 
     .book{
     grid-template-columns: auto auto;
     gap: 16px;
+    }
+
+    .book figcaption {
+    font-size: smaller;
     }
 }
 
