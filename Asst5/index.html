@@ -13,7 +13,7 @@
 
     <!-- The page URL and Image used in social media previews -->
     <meta property="og:url" content="https://hybrid.concordia.ca/btodd/humans.html">
-    <meta property="og:image" content="https.concordia.ca/btodd/humans/assets/america_pageant_og.jpg">
+    <meta property="og:image" content="https://concordia.ca/btodd/humans/assets/america_pageant_og.jpg">
 
    <!-- The dimensions and alternative description of the preview -->
     <meta property="og:image:width" content="1200">
@@ -21,13 +21,13 @@
     <meta property="twitter:image" content="Portrait associated with the America Pageant Story">
 
     <!-- Twitter card metadata controls the appearance of shad-->
-    <meta property="twitter:card" content="summery_large_image">
+    <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="A Human of New York story for CART 211">
     <meta property="twitter:description" content="A Human of New York story for CART 211">
-    <meta property="og:image:height" content="https.concordia.ca/btodd/humans/assets/america_pageant_og.jpg">
+    <meta property="og:image:height" content="https://concordia.ca/btodd/humans/assets/america_pageant_og.jpg">
 
     <!-- Identifies the preferred URL for this page to search engines -->
-     <link rel="canonical" href="https.hybrid.concordia.ca/btodd/humans.html">
+     <link rel="canonical" href="https://hybrid.concordia.ca/btodd/humans.html">
      
 
      <!-- Adds a small icon to the browser tab-->
@@ -43,7 +43,7 @@
     <!-- Google Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900,1,14..32,100..900&family-Roboto:ital,wght@0,100..900&display=swap" rel="stylesheet"> ---------------
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900,1,14..32,100..900&family=Roboto:ital,wght@0,100..900&display=swap" rel="stylesheet">
 
      <!-- Loads Font Awesome, a library of ready-made icons -->
     <!-- THe Social media icons and hamburger menu this library -->
@@ -62,9 +62,26 @@
                     </a>
                 </div>
                 <div class="menu1">
-                    <a href="stories.html" class="menu1">STORIES</a>
-                    <a href="#" class="menu1">SERIES</a>
-                    <a href="index.html" class="menu1">ABOUT</a>
+
+                    <!--the x button closes nav-->
+                    <button type="button" class="close-menu"
+                    aria-label="Close Navigation Menu">
+                        &times;
+                </button>
+
+                    <a href="stories.html" class="menuI">STORIES</a>
+                    <a href="#" class="menuI">SERIES</a>
+                    <a href="index.html" class="menuI">ABOUT</a>
+                </div>
+                <!--Hamburger button: display screens-->
+                <div class="hamburger-menu">
+                    <button type="button" aria-label="Open Navigation Menu">
+                        <!--font awesome dislays the 3 horizontal menu lines-->
+                        <span class="fa fa-bars"
+                         aria hidden="true">
+
+                        </span>
+                    </button>
                 </div>
             </nav>
         </header>
@@ -274,5 +291,29 @@
         </footer>
 
     </div>
+
+
+
+    <script>
+        //wait until the HTML doc has loaded. ensures buttns exist beore JS tries to select them
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+
+            const closeButton = document.querySelector('.close-menu');
+
+            const menu1 = document.querySelector('.menu1');
+
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+
+        });
+    </script>
+
+
 </body>
 </html>
