@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Addressing Surveillance</title>
+
+    <meta name="description" content="An interactive website exploring surveillance, data collection and digital identity.">
+
+    <!-- Author and copyright information -->
+    <meta name="author" content="Marko Anastasovski">
+    <meta name="copyright" content="Marko Anastasovski, student project">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles1.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for the hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- HEADER AND NAVIGATION -->
+        <header>
+            <nav>
+
+                <div class="logo">
+                    <a href="index.html">
+                        ADDRESSING SURVEILLANCE
+                    </a>
+                </div>
+
+                <div class="menu1">
+
+                    <!-- Button to close navigation menu -->
+                    <button type="button" class="close-menu"
+                    aria-label="Close Navigation Menu">
+                        &times;
+                    </button>
+
+                    <a href="index.html" class="menuI">HOME</a>
+                    <a href="page2.html" class="menuI">EXPLORE</a>
+                    <a href="page10.html" class="menuI">ABOUT</a>
+
+                </div>
+
+                <!-- Hamburger menu button -->
+                <div class="hamburger-menu">
+                    <button type="button" aria-label="Open Navigation Menu">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+            </nav>
+        </header>
+
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <section>
+
+                <article>
+
+                    <!-- INTRODUCTION -->
+                    <h1>How much of yourself is online?</h1>
+
+                    <p class="intro">
+                        Every day, we interact with technology without
+                        always thinking about the information we leave behind.
+                        Our clicks, searches, interests and choices can all
+                        become part of a digital profile.
+                    </p>
+
+                    <p class="intro">
+                        But who keeps track of this information, and what
+                        do they do with it?
+                    </p>
+
+
+                    <!-- IMAGE GALLERY -->
+                    <!-- Each figure represents a form of digital data -->
+
+                    <div class="pict">
+
+                        <!-- Figure 1 -->
+                        <figure class="im1">
+                            <a href="page2.html">
+                                <img src="assets/interacting.jpg" class="im"
+                                alt="Representation of online clicks">
+                            </a>
+                            <div class="hover-text">Every Click Counts</div>
+                        </figure>
+
+                        <!-- Figure 2 -->
+                        <figure class="im2">
+                            <a href="page2.html">
+                                <img src="assets/history.jpg" class="im"
+                                alt="Representation of online searches">
+                            </a>
+                            <div class="hover-text">Search History</div>
+                        </figure>
+
+                        <!-- Figure 3 -->
+                        <figure class="im3">
+                            <a href="page2.html">
+                                <img src="assets/location.jpg" class="im"
+                                alt="Representation of location tracking">
+                            </a>
+                            <div class="hover-text">Location Tracking</div>
+                        </figure>
+
+                        <!-- Figure 4 -->
+                        <figure class="im4">
+                            <a href="page2.html">
+                                <img src="assets/digitalprofile.jpg" class="im"
+                                alt="Representation of a digital profile">
+                            </a>
+                            <div class="hover-text">Your Digital Profile</div>
+                        </figure>
+
+                        <!-- Figure 5 -->
+                        <figure class="im5">
+                            <a href="page2.html">
+                                <img src="assets/algorithm.jpg" class="im"
+                                alt="Representation of an algorithm">
+                            </a>
+                            <div class="hover-text">The Algorithm</div>
+                        </figure>
+
+                        <!-- Figure 6 -->
+                        <figure class="im6">
+                            <a href="page2.html">
+                                <img src="assets/footprint.jpg" class="im"
+                                alt="Representation of a digital footprint">
+                            </a>
+                            <div class="hover-text">Digital Footprint</div>
+                        </figure>
+
+                    </div>
+                    <!-- END OF IMAGE GALLERY -->
+
+
+                    <!-- ABOUT THE PROJECT -->
+                    <section class="about">
+
+                        <h2>YOUR DATA. YOUR DIGITAL IDENTITY.</h2>
+
+                        <p>
+                            Explore how everyday online
+                            activities can be used to monitor individuals,
+                            create profiles and influence their behaviour.
+                        </p>
+
+                        <p>
+                            You will answer questions and
+                            make choices. These interactions will demonstrate
+                            how ordinary information can be used to build
+                            a picture of who you are.
+                        </p>
+
+                        <a href="page2.html">START EXPLORING</a>
+
+                    </section>
+
+                </article>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div class="credits">
+                <p>
+                    Copyright Marko Anastasovski, CART 214, Fall 2026
+                </p>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FOR THE HAMBURGER MENU -->
+    <script>
+
+        // Wait until the HTML document has loaded
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+
+            const closeButton = document.querySelector('.close-menu');
+
+            const menu1 = document.querySelector('.menu1');
+
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
