@@ -4,6 +4,13 @@ body {
     background: linear-gradient(135deg, #10171b 0%, #202e35 70%);
 }
 
+/* Override styles1.css to snap the heading to the far left */
+.stories_title {
+    text-align: left;
+    margin-left: 0;
+    grid-column: 1 / -1;
+}
+
 .menu1 {
     background: #202e35;
 }
@@ -25,4 +32,3 @@ body {
 .stories {
     border-left-color: #9baab0;
 }
-

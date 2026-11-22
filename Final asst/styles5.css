@@ -1,0 +1,56 @@
+@import url("styles1.css");
+
+body {
+    background: 
+        linear-gradient(rgba(10, 5, 5, 0.72), rgba(20, 5, 5, 0.85)),
+        url("assets/eye.jpg") center / cover no-repeat fixed;
+    color: #f5e6e6;
+}
+
+.menu1 {
+    background: #140505;
+    border-bottom: 2px solid #cc0000;
+}
+
+h1 {
+    color: #ff3333;
+    text-shadow: 2px 2px 0px #000000;
+    letter-spacing: 3px;
+}
+
+.stories_title {
+    text-align: right;
+    margin-left: 0;
+    grid-column: 1 / -1;
+    color: #ff3333;
+    transform: rotate(1deg);
+}
+
+
+
+.pict figure:hover img {
+    transform: translate(-4px, 4px) scale(1.04);
+    filter: grayscale(100%) contrast(2) invert(0);
+}
+
+.hover-text {
+    border-radius: 0px;
+    border-left: 4px solid #cc0000;
+    background: rgba(204, 0, 0, 0.2);
+}
+
+.stories {
+    border-left: 3px solid #cc0000;
+    background: rgba(10, 5, 5, 0.85);
+    padding: 15px;
+}
+
+.im {
+    width: 100%;
+    
+    max-height: 800px;
+    object-fit: cover;
+    border-radius: 0px;
+    border: 2px solid #cc0000;
+    filter: grayscale(100%) contrast(1.8) invert(0.9);
+}

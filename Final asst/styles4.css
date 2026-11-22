@@ -1,0 +1,64 @@
+@import url("styles1.css");
+
+
+body {
+    background: 
+        linear-gradient(rgba(10, 5, 5, 0.72), rgba(20, 5, 5, 0.85)),
+        url("assets/shattered.jpg") center / cover no-repeat fixed;
+    color: #f5e6e6;
+}
+
+
+.menu1 {
+    background: #0a0305;
+    border-bottom: 2px solid #ff2a2a;
+    box-shadow: 0 4px 20px rgba(255, 42, 42, 0.25);
+    gap: 24px;
+}
+
+
+h1 {
+    text-shadow: 3px 0 #ff2a2a, -3px 0 #00e5ff;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+.stories_title {
+    text-align: center;
+    margin-left: 0;
+    grid-column: 1 / -1;
+    color: #ff4d4d;
+    text-shadow: -2px 2px 0 #000, 2px -1px #00e5ff;
+    transform: skewX(-8deg) rotate(-1deg);
+}
+
+
+.im {
+    border-radius: 0px;
+    border: 2px solid #ff2a2a;
+    filter: grayscale(100%) contrast(1.85) brightness(0.75);
+    box-shadow: 6px 6px 0px rgba(255, 42, 42, 0.4);
+    transition: transform 0.08s steps(2), filter 0.08s ease;
+}
+
+
+.pict figure:hover img {
+    transform: translate(6px, -4px) skewX(4deg) scale(1.05);
+    filter: contrast(2.2) invert(0.9);
+}
+
+
+.hover-text {
+    border-radius: 0px;
+    border-left: 5px solid #ff2a2a;
+    background: rgba(255, 42, 42, 0.18);
+}
+
+.stories {
+    border-left: 3px solid #ff2a2a;
+    border-right: 1px dashed rgba(255, 42, 42, 0.5);
+    background: rgba(8, 4, 6, 0.85); /* Dark backdrop keeps text sharp over the brighter eye */
+    padding: 18px;
+    box-shadow: inset 0 0 25px rgba(255, 0, 0, 0.15);
+}

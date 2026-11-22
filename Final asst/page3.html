@@ -1,123 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Addressing Surveillance | Every Click Counts</title>
+    <title>Everyday Signals | Addressing Surveillance</title>
+    <meta name="author" content="Marko Anastasovski">
+    <meta name="copyright" content="Marko Anastasovski, student project, 2026">
 
-    <link rel="stylesheet" href="styles2.css"> // new style ofr he next two pages because i want the webiste to degrade into sometihng else the deeper you go.
-
+    <link rel="stylesheet" href="styles2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-
     <div id="wrapper">
 
         <header>
-            <div class="logo">
-                <a href="index.html">ADDRESSING SURVEILLANCE</a>
-            </div>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">ADDRESSING SURVEILLANCE</a>
+                </div>
 
-            <nav class="menu1">
-                <a class="menuI" href="index.html">HOME</a>
-                <a class="menuI menuI_active" href="page2.html">EXPLORE</a>
-                <a class="menuI" href="page10.html">ABOUT</a>
+                <div class="menu1">
+                    <button type="button" class="close-menu" aria-label="Close Navigation Menu">&times;</button>
+                    <a href="index.html" class="menuI">RESTART</a>
+                    <a href="page4.html" class="menuI">NEXT →</a>
+                    <a href="index.html#about" class="menuI">ABOUT</a>
+                </div>
 
-                <button class="close-menu">CLOSE</button>
+                <div class="hamburger-menu">
+                    <button type="button" aria-label="Open navigation menu">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </button>
+                </div>
             </nav>
-
-            <div class="hamburger-menu">
-                <button aria-label="Open menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
         </header>
 
         <main>
+            <section>
+                <article>
+                    <h1>Everyday Signals</h1>
+                    <h2 class="stories_title">Routine &amp; Attention</h2>
 
-            <h1>Addressing Surveillance</h1>
-            <h2>Every Click Counts</h2>
-
-            <div class="left_stories">
-
-                <img class="im" src="assets/interaction.jpg" alt="A person using a computer">
-
-                <div class="stories">
-
-                    <p>
-                        Every time we use the internet, we leave behind small pieces
-                        of information. Clicking on a video, liking a post, visiting
-                        a website or searching for something can all create data.
+                    <p class="intro">
+                        Even without posting anything, the rhythm of how you browse—when you log on, what you hover over, and what you skip—becomes readable behavioral data.
                     </p>
 
-                    <p>
-                        Most of these actions seem unimportant on their own.
-                        However, websites and online platforms can collect them
-                        and look for patterns in our behaviour.
-                    </p>
+                    <div class="pict">
+                        <figure class="im1">
+                            <a href="page4.html">
+                                <img src="assets/interacting.jpg" class="im" alt="Click and hover timing">
+                            </a>
+                            <div class="hover-text">Pause &amp; Scroll Speed</div>
+                        </figure>
 
-                    <p>
-                        For example, if someone regularly watches videos about
-                        gaming, searches for new technology and visits gaming
-                        websites, platforms may begin to understand that these
-                        are some of their interests.
-                    </p>
+                        <figure class="im2">
+                            <a href="page4.html">
+                                <img src="assets/history.jpg" class="im" alt="Search trail">
+                            </a>
+                            <div class="hover-text">Repeated Searches</div>
+                        </figure>
 
-                    <p>
-                        This information can then be used to recommend similar
-                        videos, suggest products or show advertisements that
-                        match what someone has been looking at.
-                    </p>
+                        <figure class="im3">
+                            <a href="page4.html">
+                                <img src="assets/location.jpg" class="im" alt="Location and time patterns">
+                            </a>
+                            <div class="hover-text">Time &amp; Location</div>
+                        </figure>
+                    </div>
 
-                    <p>
-                        Even when we are not directly sharing personal information,
-                        our everyday actions can reveal more about us than we might
-                        expect.
-                    </p>
+                    <section class="about">
+                        <h2>SORTING ORDINARY HABITS</h2>
 
-                </div>
+                        <div class="question">
+                            <h3>When are you most active online?</h3>
+                            <label><input type="radio" name="routine"> Early morning</label><br>
+                            <label><input type="radio" name="routine"> Afternoon</label><br>
+                            <label><input type="radio" name="routine"> Late at night</label>
+                        </div>
 
-            </div>
-
-            <section class="about">
-
-                <h2>SMALL ACTIONS, BIG PICTURE</h2>
-
-                <p>
-                    One click might not reveal much about a person. But when
-                    hundreds or thousands of clicks are collected over time,
-                    they can help create a detailed picture of someone's
-                    interests and habits.
-                </p>
-
-                <p>
-                    Think about how many times you click, search, watch or scroll
-                    in a single day. How much information could those actions
-                    reveal when they are all put together?
-                </p>
-
-                <a href="page4.html">CONTINUE TO PAGE 4</a>
-
+                        <p><small>Fictional demonstration only. No personal data is collected.</small></p>
+                        <a href="page4.html">MAKE A CHOICE</a>
+                    </section>
+                </article>
             </section>
-
         </main>
 
-        <footer class="credits">
-            <p>© Marko Anastasovski, CART 214, Fall 2026. Addressing Surveillance.</p>
+        <footer>
+            <div class="credits">
+                <p>Copyright Marko Anastasovski, CART 211, 2026</p>
+            </div>
         </footer>
 
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-
             const hamburgerButton = document.querySelector('.hamburger-menu button');
             const closeButton = document.querySelector('.close-menu');
             const menu1 = document.querySelector('.menu1');
@@ -129,9 +110,7 @@
             closeButton.addEventListener('click', () => {
                 menu1.classList.remove('menu-deployed');
             });
-
         });
     </script>
-
 </body>
 </html>

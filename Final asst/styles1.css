@@ -471,4 +471,59 @@ footer a {
         font-size: 1.2em;
         line-height: 1.5em;
     }
+
+}
+
+main a,
+    main a:link,
+    main a:visited,
+    .about a,
+    .about a:link,
+    .about a:visited {
+    color: #ffffff;
+    }
+
+    main a:hover,
+    main a:active,
+    .about a:hover,
+    .about a:active {
+        color: #e6e8e8;
+    }
+
+    main a,
+main a:link,
+main a:visited,
+.about a,
+.about a:link,
+.about a:visited {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #293a42;
+    padding: 12px 20px;
+    margin-top: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+main a:hover,
+main a:active,
+.about a:hover,
+.about a:active {
+    color: #ffffff;
+    background-color: #1c2a30;
+    border-color: #a34b4b;
+    transform: translateY(-1px);
+}
+
+.stories_title {
+    text-align: left;
+    margin-left: 50%; /* Adjust this percentage or pixel value to match .stories */
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
 }

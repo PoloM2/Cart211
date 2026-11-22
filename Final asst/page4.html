@@ -1,123 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Addressing Surveillance | Every Click Counts</title>
+    <title>Your Choices | Addressing Surveillance</title>
+    <meta name="author" content="Marko Anastasovski">
+    <meta name="copyright" content="Marko Anastasovski, student project, 2026">
 
-    <link rel="stylesheet" href="styles2.css"> // new style ofr he next two pages because i want the webiste to degrade into sometihng else the deeper you go.
-
+    <link rel="stylesheet" href="styles2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-
     <div id="wrapper">
 
         <header>
-            <div class="logo">
-                <a href="index.html">ADDRESSING SURVEILLANCE</a>
-            </div>
+            <nav>
+                <div class="logo">
+                    <a href="index.html">ADDRESSING SURVEILLANCE</a>
+                </div>
 
-            <nav class="menu1">
-                <a class="menuI" href="index.html">HOME</a>
-                <a class="menuI menuI_active" href="page2.html">EXPLORE</a>
-                <a class="menuI" href="page10.html">ABOUT</a>
+                <div class="menu1">
+                    <button type="button" class="close-menu" aria-label="Close navigation menu">&times;</button>
+                    <a href="index.html" class="menuI">HOME</a>
+                    <a href="page2.html" class="menuI_active">EXPLORE</a>
+                    <a href="index.html#about" class="menuI">ABOUT</a>
+                </div>
 
-                <button class="close-menu">CLOSE</button>
+                <div class="hamburger-menu">
+                    <button type="button" aria-label="Open navigation menu">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </button>
+                </div>
             </nav>
-
-            <div class="hamburger-menu">
-                <button aria-label="Open menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
         </header>
 
         <main>
+            <section>
+                <article>
+                    <h1>Your Choices</h1>
+                    <h2 class="stories_title">Turning Clicks Into Labels</h2>
 
-            <h1>Addressing Surveillance</h1>
-            <h2>Every Click Counts</h2>
+                    <div class="pict">
+                        <figure class="im1">
+                            <a href="page5.html">
+                                <img src="assets/polished.jpg" class="im" alt="Option A visual">
+                            </a>
+                            <div class="hover-text">Path A — Familiar &amp; Fast</div>
+                        </figure>
 
-            <div class="left_stories">
+                        <figure class="im2">
+                            <a href="page5.html">
+                                <img src="assets/experimental.jpg" class="im" alt="Option B visual">
+                            </a>
+                            <div class="hover-text">Path B — Experimental &amp; Slow</div>
+                        </figure>
+                    </div>
 
-                <img class="im" src="assets/interaction.jpg" alt="A person using a computer">
+                    <section class="about">
+                        <h2>HOW SELECTIONS BECOME CATEGORIES</h2>
+                        <p>Platforms rarely leave choices open-ended. Simple binary options make it easier for automated systems to sort visitors into predictable groups.</p>
 
-                <div class="stories">
+                        <div class="question">
+                            <h3>Which type of work usually catches your eye first?</h3>
+                            <label><input type="radio" name="path"> Option A — Polished, trending, easy to scan</label><br>
+                            <label><input type="radio" name="path"> Option B — Unconventional, personal, slower to read</label>
+                        </div>
 
-                    <p>
-                        Every time we use the internet, we leave behind small pieces
-                        of information. Clicking on a video, liking a post, visiting
-                        a website or searching for something can all create data.
-                    </p>
-
-                    <p>
-                        Most of these actions seem unimportant on their own.
-                        However, websites and online platforms can collect them
-                        and look for patterns in our behaviour.
-                    </p>
-
-                    <p>
-                        For example, if someone regularly watches videos about
-                        gaming, searches for new technology and visits gaming
-                        websites, platforms may begin to understand that these
-                        are some of their interests.
-                    </p>
-
-                    <p>
-                        This information can then be used to recommend similar
-                        videos, suggest products or show advertisements that
-                        match what someone has been looking at.
-                    </p>
-
-                    <p>
-                        Even when we are not directly sharing personal information,
-                        our everyday actions can reveal more about us than we might
-                        expect.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <section class="about">
-
-                <h2>SMALL ACTIONS, BIG PICTURE</h2>
-
-                <p>
-                    One click might not reveal much about a person. But when
-                    hundreds or thousands of clicks are collected over time,
-                    they can help create a detailed picture of someone's
-                    interests and habits.
-                </p>
-
-                <p>
-                    Think about how many times you click, search, watch or scroll
-                    in a single day. How much information could those actions
-                    reveal when they are all put together?
-                </p>
-
-                <a href="page4.html">CONTINUE TO PAGE 4</a>
-
+                        <p><small>Fictional demonstration only. No personal data is collected.</small></p>
+                        <a href="page5.html">SEE YOUR PROFILE</a>
+                    </section>
+                </article>
             </section>
-
         </main>
 
-        <footer class="credits">
-            <p>© Marko Anastasovski, CART 214, Fall 2026. Addressing Surveillance.</p>
+        <footer>
+            <div class="credits">
+                <p>Copyright Marko Anastasovski, CART 211, 2026</p>
+            </div>
         </footer>
 
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-
             const hamburgerButton = document.querySelector('.hamburger-menu button');
             const closeButton = document.querySelector('.close-menu');
             const menu1 = document.querySelector('.menu1');
@@ -129,9 +99,7 @@
             closeButton.addEventListener('click', () => {
                 menu1.classList.remove('menu-deployed');
             });
-
         });
     </script>
-
 </body>
 </html>
