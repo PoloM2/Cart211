@@ -54,3 +54,19 @@ h1 {
     border: 2px solid #cc0000;
     filter: grayscale(100%) contrast(1.8) invert(0.9);
 }
+
+.logo a,
+.logo a:visited {
+    color: #f5e6e6;
+    text-decoration: none;
+    border: 1px solid #cc0000;
+    background: rgba(204, 0, 0, 0.2);
+    padding: 8px 14px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.logo a:hover {
+    background: #cc0000;
+    color: #ffffff;
+}
